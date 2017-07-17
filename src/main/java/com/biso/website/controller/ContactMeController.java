@@ -20,7 +20,7 @@ public class ContactMeController {
     @RequestMapping(value = "/userMessage", method = RequestMethod.POST)
     public @ResponseBody Map<String, String> userMessage(UserMessage message, HttpServletResponse response) {
         Map<String, String> result = new HashMap<>();
-        result.put("status", "success");
+        result.put("status", "failed");
         return result;
     }
 }
